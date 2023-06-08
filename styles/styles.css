@@ -1,0 +1,154 @@
+/* css to style my nav bar */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+    background-color: #555;
+}
+.t , .y {
+    color: blue;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	margin: 0 10px;
+}
+
+.menu li a {
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+	background-color: #15d47b;
+}
+
+.mobile-menu-icon {
+	display: none;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.mobile-menu-icon {
+		display: block;
+	}
+	.menu {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		background-color: #333;
+	}
+	.menu li {
+		margin: 10px 0;
+	}
+	.menu li a {
+		padding: 10px 20px;
+	}
+	.menu.active {
+		display: flex;
+	}
+}
+
+
+
+h1 {
+	text-align: center;
+    font-style: italic;
+    font-family: sans-serif;
+    
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+}
+
+label {
+	font-weight: bold;
+	margin: 10px;
+}
+
+input[type="text"], input[type="number"], select {
+	padding: 5px;
+	margin: 5px;
+	width: 300px;
+}
+
+select[multiple] {
+	height: 80px;
+}
+
+button {
+	padding: 10px;
+	margin: 10px;
+	width: 150px;
+}
+
+#userTable {
+	border-collapse: collapse;
+	margin: 20px;
+}
+
+#userTable td, #userTable th {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+
+/* css to style the registered customers heading */
+.title{
+    color: #ddd;
+    text-align: center;
+    background-color: violet;
+    border-radius: 6px;
+}
+.title:hover{
+    background-color: brown;
+}

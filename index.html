@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Registration Management System</title>
+	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+    <header class="hearder">
+        <a href="#" class="logo"> <span class="t">T</span>he Jitu Compan<span class="y">Y</span></a>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+    </header>
+	<h1>User Registration Management System</h1>
+	<form id="userForm">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name here ..." required>
+
+		<label for="id">ID Number:</label>
+		<input type="number" id="id" name="id" placeholder="Enter your ID Number here ..." required>
+
+		<label for="country">Country:</label>
+		<select id="country" name="country">
+            <option value="">~~~  Please select a country   ~~~</option>
+			<option value="USA">Kenya</option>
+			<option value="Canada">Tanzania</option>
+			<option value="UK">UK</option>
+			<option value="Australia">Uganda</option>
+            <option value="Australia">Argentina </option>
+            <option value="Australia">Brazil</option>
+            <option value="Australia">Mexico</option>
+		</select>
+
+		<label for="languages">Languages Spoken:</label>
+		<select id="languages" name="languages">
+            <option value="">~~~  Please select a language   ~~~</option>
+			<option value="English">English</option>
+			<option value="Spanish">Swahili</option>
+			<option value="French">French</option>
+			<option value="German">German</option>
+		</select>
+
+		<button type="submit" id="submitBtn" >Add User</button>
+	
+	</form>
+		<tbody></tbody>
+	</table>
+
+    <div id="members-list">
+        <h2 class="title"> Registered members </h2>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                     <th>ID Number</th>
+                     <th>Country</th>
+                     <th>Languages Spoken</th>
+                     <th>Delete user</th>
+                </tr>
+                <tr>
+                    <td>John Chege</td>
+                    <td>234567</td>
+                    <td>kenya</td>
+                    <td>English</td>
+                    <td><button id="delete">Delete user</button></td>
+                </tr>
+            </thead>
+	<script src="./js/app.js"></script>
+</body>
+</html>
